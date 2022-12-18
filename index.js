@@ -504,7 +504,7 @@ const add_user = () => {
 const login_user = () => {
     let input_handle = select(1, "#login_handle").value;
     let input_name = select(1, "#loging_password").value;
-    let input_error_text = create("p", 1, "input_error_text", "Hi", 1);
+    let input_error_text = create("p", 1, "input_error_text", ". . .", 1);
 
     for (i in user_db) {
         if (user_db[i][0] == input_name) {
