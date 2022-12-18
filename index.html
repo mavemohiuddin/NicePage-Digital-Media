@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Montserrat:ital,wght@0,400;0,600;0,900;1,200&display=swap" rel="stylesheet">
+
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Nice Page - Digital Media</title>
+</head>
+<body data-signed="signup" data-id="id" class="body">
+    <header class="header is_flex is_center">
+        <div class="inner_section is_flex is_aside">
+            <div class="site_icon_container">
+                <a href="#">
+                    <img src="./images/logo.png" draggable ="false" >
+                </a>
+            </div>
+            <nav class="main_nav is_flex is_center">
+                <a href="#about_us" class="nav_item">About us</a>
+                <a href="#gallery" class="nav_item">Gallery</a>
+                <a href="#slideshow" class="nav_item">Slideshow</a>
+                <a href="#about_us_video" class="nav_item">Video</a>
+            </nav>
+            <div class="account_container">
+                <div class="user_account_icon is_pointer" onclick="account()">
+                    <p class="login_prompt">Account</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero_section is_flex is_center">
+        <div class="inner_section is_flex is_center">
+            <div class="content_container is_flex_column is_aside">
+                <p class="hero_heading">Digital Media</p>
+                <p class="hero_subheading">Agency</p>
+                <img src="./images/visual_circle.png" alt="" draggable ="false" class="visual_circle">
+                <img src="./images/visual_triangle.png" alt="" draggable ="false" class="visual_triangle">
+                <a href="#contact" class="btn contact_btn block_button is_absolute is_flex is_center" onclick="contact_form()">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about_us" class="what_is_section">
+        <div class="inner_section">
+            <img src="./images/visual_ring.png" alt="" class="visual_ring" draggable ="false" >
+            <h2 class="section_heading">What is a Digital Marketing Agency?</h2>
+            <h3 class="section_sub_heading">Strategy, Digital Marketing</h3>
+            <p class="section_content">In a world where marketing and advertising is now primarily digital, the term ‘digital agency’ almost seems redundant, doesn’t it? However, with print, radio, television, and other traditional marketing techniques maintaining some relevance among modern strategic marketing campaigns, explaining what makes a ‘digital agency’ different than some others out there is something we think our readers should understand.</p>
+        </div>
+    </section>
+
+    <section class="details_section">
+        <div class="inner_section is_flex is_center">
+            <div class="block is_flex_column">
+                <div class="block_image_container is_flex is_center">
+                    <img src="./images/detail_icon01.png" alt="" draggable ="false" class="block_image">
+                </div>
+                <p class="block_heading">Strategy</p>
+            </div>
+            <div class="block is_flex_column">
+                <div class="block_image_container is_flex is_center">
+                    <img src="./images/detail_icon02.png" alt="" draggable ="false" class="block_image">
+                </div>
+                <p class="block_heading">Digital Products</p>
+            </div>
+            <div class="block is_flex_column">
+                <div class="block_image_container is_flex is_center">
+                    <img src="./images/detail_icon03.png" alt="" draggable ="false" class="block_image">
+                </div>
+                <p class="block_heading">Social Media</p>
+            </div>
+            <div class="block is_flex_column">
+                <div class="block_image_container is_flex is_center">
+                    <img src="./images/detail_icon04.png" alt="" draggable ="false" class="block_image">
+                </div>
+                <p class="block_heading">Mobile & Web</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery_section">
+        <div class="inner_section">
+            <img src="./images/visual_ring.png" alt="" draggable ="false" class="visual_ring2">
+            <h2 class="section_heading">Latest Work</h2>
+            <div class="gallery_container is_flex is_center">
+                <div class="gallery_image_block is_flex is_center"><img src="./images/gallery_item01.jpeg" alt="" class="gallery_image"></div>
+                <div class="gallery_image_block is_flex is_center"><img src="./images/gallery_item02.jpeg" alt="" class="gallery_image"></div>
+                <div class="gallery_image_block is_flex is_center"><img src="./images/gallery_item03.jpeg" alt="" class="gallery_image"></div>
+                <div class="gallery_image_block is_flex is_center"><img src="./images/gallery_item04.jpeg" alt="" class="gallery_image"></div>
+                <div class="gallery_image_block is_flex is_center"><img src="./images/gallery_item05.jpeg" alt="" class="gallery_image"></div>
+                <div class="gallery_image_block is_flex is_center"><img src="./images/gallery_item06.jpeg" alt="" class="gallery_image"></div>
+            </div>
+            <div class="cta_container is_flex is_center">
+                <a href="#gallery-all" class="btn cta_gallery block_button is_absolute is_flex is_center" onclick="gallery()">View All</a>
+            </div>
+            <img src="./images/visual_squigly.png" alt="" draggable ="false" class="visual_squigly">
+        </div>
+    </section>
+
+    <section id="slideshow" class="slideshow_section is_flex is_center">
+        <div class="inner_section">
+            <div class="slideshow_container is_flex is_center">
+                <div class="scroll_button scroll_back is_pointer"><div></div></div>
+                <div data-status="1" class="slide">
+                    <h2 class="section_heading">Bird Man!</h2>
+                    <div class="slide_image_container is_flex is_center">
+                        <img src="./images/slide_item01.jpeg" alt="" class="slide_image">
+                    </div>
+                </div>
+                <div data-status="2" class="slide">
+                    <h2 class="section_heading">Punk Man!</h2>
+                    <div class="slide_image_container is_flex is_center">
+                        <img src="./images/slide_item02.jpeg" alt="" class="slide_image">
+                    </div>
+                </div>
+                <div data-status="3" class="slide">
+                    <h2 class="section_heading">City Man!</h2>
+                    <div class="slide_image_container is_flex is_center">
+                        <img src="./images/slide_item03.jpeg" alt="" class="slide_image">
+                    </div>
+                </div>
+                <div data-status="4" class="slide">
+                    <h2 class="section_heading">Walk Man!</h2>
+                    <div class="slide_image_container is_flex is_center">
+                        <img src="./images/slide_item04.jpeg" alt="" class="slide_image">
+                    </div>
+                </div>
+                <div class="scroll_button scroll_front is_pointer"><div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="complicated_section">
+        <div class="inner_section">
+            <img src="./images/visual_ring_cyan.png" alt="" draggable ="false" class="visual_ring">
+            <h2 class="section_heading">It's Complicated</h2>
+            <p class="section_content">The term ‘digital agency’ is no longer a new or mysterious phrase. Instead, it has become more of a buzzword that is overused and often misused. Though the phrase may seem quite uncomplicated, it’s the ambiguity of it that can sometimes be confusing. CommonPlaces has always considered itself a digital agency, but in a time where everyone and anyone can say they are a “digital agency”, we understand the importance of clarifying exactly what that means for our audience.</p>
+        </div>
+    </section>
+
+    <section id="about_us_video" class="video_section">
+        <div class="inner_section is_flex">
+            <div class="column is_flex_column is_center">
+                <video src="./images/Synchronized Cats.mp4" class="video" height="320" width="560" loop controls autoplay muted></video>
+                <h2 class="about_heading section_heading">Technical/Digital Agency</h2>
+                <p class="about_content1 section_content">To be clear, a ‘digital agency’ still cares very much about the quality of design and overall aesthetics of every asset associated with a brand – whether it be print or digital.</p>
+            </div>
+
+            <div class="column is_flex_column is_center">
+                <p class="about_content2 section_content">However, they also take special care to ensure that each brand asset and/or application functions in a way that helps companies to reach their goals. They have the tools and skills necessary to create ideas and assets and put them to work in the most efficient ways.</p>
+                <p class="about_content3 section_content">A digital agency’s focus goes beyond just the aesthetics of design, but also considers the overall user experience on every digital platform, and regardless of what type of device is being used. From web development and UX/UI web design to SEO, social media and content marketing – and everything in between – a digital agency works to deliver a functional design that not only looks great, but also drives business growth.</p>
+                <button class="btn block_button is_flex is_center is_pointer" onclick="details()">Read More</button>
+                <img src="./images/visual_circle.png" alt="" draggable ="false" class="visual_circle">
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter_section">
+        <div class="inner_section is_flex_column is_center">
+            <h2 class="section_heading">Subscribe to our free newsletter!</h2>
+            <form class="newsletter">
+                <form_element class="form_element is_flex">
+                    <input type="text" class="sub_email">
+                    <div class="sub_submit is_flex is_center is_pointer">Send</div>
+                </form_element>
+            </form>
+            <p class="section_content">We will not spam you or share your information.</p>
+        </div>
+    </section>
+
+    <section data-type="popup" data-value="" class="fly_up is_flex is_center">
+        <div class="popup_close is_pointer is_flex is_center">X</div>
+        <board class="popup_content_box"></board>
+    </section>
+</body>
+</html>
