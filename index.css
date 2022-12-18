@@ -178,7 +178,7 @@ body, div, p, span {
 /* Hero Section Styles */
 .hero_section {
     height: 767px;
-    background-image: url("./images/hero_image.png");
+    background-image: url("./hero_image.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
